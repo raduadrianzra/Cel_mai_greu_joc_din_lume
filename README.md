@@ -1,4 +1,6 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Cel mai greu joc din lume
+
+### In acest proiect voi crea un joc de tipul "World's Hardest Game". Jucatorul va trebui sa evite obstacolele si sa ajunga la finalul nivelelor. Jucatorul foloseste controale simple, dar movementul va fi uneori alterat de imprejurimi.
 
 ### Folosiți template-ul corespunzător grupei voastre!
 
