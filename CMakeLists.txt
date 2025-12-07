@@ -23,6 +23,7 @@ include(cmake/CopyHelper.cmake)
 
 # external dependencies with FetchContent
 # include(FetchContent)
+
 #
 # set(FETCHCONTENT_QUIET OFF)
 # set(FETCHCONTENT_UPDATES_DISCONNECTED ON)
@@ -45,11 +46,12 @@ include(cmake/CopyHelper.cmake)
 
 # find_package(Threads REQUIRED)
 
+
 ###############################################################################
 
 # NOTE: update executable name in .github/workflows/cmake.yml:25 when changing name here
 add_executable(${MAIN_EXECUTABLE_NAME}
-    main.cpp
+        main.cpp
 )
 
 # NOTE: Add all defined targets (e.g. executables, libraries, etc. )
@@ -66,7 +68,6 @@ set_compiler_flags(RUN_SANITIZERS TRUE TARGET_NAMES ${MAIN_EXECUTABLE_NAME})
 # target_include_directories(${MAIN_EXECUTABLE_NAME} SYSTEM PRIVATE ${<SomeLib>_SOURCE_DIR}/include)
 # target_link_directories(${MAIN_EXECUTABLE_NAME} PRIVATE ${<SomeLib>_BINARY_DIR}/lib)
 # target_link_libraries(${MAIN_EXECUTABLE_NAME} <SomeLib>)
-
 ###############################################################################
 
 # copy binaries to "bin" folder; these are uploaded as artifacts on each release
